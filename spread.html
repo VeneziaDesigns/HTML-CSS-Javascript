@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread</title>
+</head>
+<body>
+    <script>
+        function sum(x, y, z) {
+            return x + y + z;
+        }
+        let numeros = [1,2,3];
+        //No procesa los numeros del array por separado
+        //(...numeros) descompone el array en los valores que lo componen
+        document.write(sum(...numeros));
+        document.write("<br>");
+
+        let animales = ["Perro","Gato","Hamster","Tortuga"];
+        document.write(animales);
+        document.write("<br>");
+        //Hace una copia o agrega elementos al array 
+        let copiaAnimales = ["Caballo",...animales, "Ardilla"];
+        document.write(copiaAnimales);
+    </script>
+</body>
+</html>

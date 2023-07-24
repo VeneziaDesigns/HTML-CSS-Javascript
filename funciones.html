@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        //Funciones con nombre. Se puede ejecutar la llamada a la funcion
+        //tanto antes como despues de la definicion de la funcion
+        cubo(3);
+        function cubo(x){
+            //return x**3;
+            document.write(x**3 + "<br>");
+        }
+      
+        //Funcion anonima
+        //Solo se puede llamar despues de declararla
+        //cuadrado(2);
+        let cuadrado = function (x){
+            document.write(x**2 + "<br>");
+        }
+        cuadrado(2);
+
+        //Funcion flecha
+        //No requieren la palabra clave function
+        //basta con poner el parametro entre parentesis
+        //o los parentesis si no hay parametros y el 
+        //simbolo => flecha
+        let cuartaPotencia = (x) => {
+            document.write(x**4);
+        }
+        cuartaPotencia(2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./formulario.css">
+</head>
+<body>
+    <form>
+        <label>Nombre:</label><br>
+        <input type="text"><br>
+        <label>Apellido:</label><br>
+        <input type="text"><br>
+        <label>Conocimientos</label><br>
+        <input type="radio" name="lenguaje" value="HTML">
+        <label>HTML</label><br>
+        <input type="radio" name="lenguaje" value="CSS">
+        <label>CSS</label><br>
+        <input type="radio" name="lenguaje" value="JavaScript">
+        <label>JavaScript</label><br>
+        <!--para que funcione radio buton tienen que tener el mismo name-->
+        <label>Carnet de conducir</label><br>
+        <label>Tipo B1</label>
+        <input type="checkbox" name="carnet1"><br>
+        <label>Tipo B2</label>
+        <input type="checkbox" name="carnet2"><br>
+        <label>Tipo A1</label>
+        <input type="checkbox" name="carnet3"><br>
+            <label>Marca de coche</label><br>
+            <select name="Coches">
+                <option value="Seat">Seat</option>
+                <option value="Ford">Ford</option>
+                <option value="Opel" selected>Opel</option>
+                <!--Selected -> por defecto-->
+            </select><br>
+            <textarea name="mensaje" rows="12" cols="30"></textarea><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>

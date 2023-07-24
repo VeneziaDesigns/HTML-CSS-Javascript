@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos</title>
+</head>
+<body>
+    <canvas id="lienzo" width="200" height="100" style="border:1px solid black;"></canvas>
+    <script>
+        var c = document.getElementById("lienzo");
+        var contexto = c.getContext("2d");
+        contexto.moveTo(0,0);
+        contexto.lineTo(200,100);
+        contexto.stroke();
+        contexto.beginPath();
+        contexto.arc(100, 50, 40, 0, 2* Math.PI);
+        contexto.stroke();
+    </script>
+</body>
+</html>

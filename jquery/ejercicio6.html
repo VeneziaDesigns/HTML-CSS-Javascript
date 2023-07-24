@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery-3.6.1.js"></script>
+    <script>
+        function despuesDelTexto() {
+            var txt1 = "Insertado "; //Insertado con Javascript clasico
+            var txt2 = $("<b>con jquery</b>"); //Insertado con Jquery
+            var txt3 = document.createElement("b"); //Creado con el DOM
+            txt3.innerHTML = " y el DOM";
+            $("img").after(txt1, txt2, txt3); //Insertar despues de imagen
+        }
+    </script>
+</head>
+<body>
+    <img src="./brain-g058495446_640.png" width="100" height="100" alt="cerebro">
+    <p>Pulsa el boton para insertar texto despues de la imagen</p>
+    <button onclick="despuesDelTexto()">Insertar después</button>
+   <!-- <script src="./ejercicio1.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid red;
+            border-radius: 3px;
+        }
+        label{
+            padding: 12px 12px 12px 0;
+        }
+        input[type=submit]{
+            background-color: #4a4b88;
+            padding: 12px 14px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            float: right;
+        }
+        /*subclase*/
+        input[type=submit]:hover{
+            background-color: green;
+        }
+        .contenedor{
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .col-25{
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        .col-75{
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit]{
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <form>
+            <div class="fila">
+                <div class="col-25">
+                    <label>Nombre:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="nombre" placeholder="Tu nombre">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-25">
+                    <label>Apellido:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="apellido" placeholder="Tu apellido">
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-25">
+                    <label>País:</label>
+                </div>
+                <div class="col-75">
+                    <select name="pais">
+                        <option value="España">España</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Francia">Francia</option>
+                    </select>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-25">
+                    <label>Mensaje:</label>
+                </div>
+                <div class="col-75">
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje" cols="30" rows="12"></textarea>
+                </div>
+            </div>
+            <div class="fila">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

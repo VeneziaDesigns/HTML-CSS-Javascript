@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .static {
+            border: 3px solid red;
+            position: static;
+            left: 30px;
+        }
+        .relative {
+            border: 3px solid red;
+            position: relative;
+            left: 30px;
+        }
+        .fixed {
+            border: 3px solid red;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+        }
+        .relative2{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 3px solid red;
+        }
+        .absolute {
+            position: absolute;
+            border: 3px solid red;
+            top: 80px;
+            right: 20px;
+            width: 200px;
+            height: 100px;
+        }
+        .sticky {
+            /*position: -webkit-sticky;*/
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: beige;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--Existen 5 posiciones
+    -Static (por defecto)
+    -Relative
+    -Fixed
+    -Absolute
+    -Sticky
+-->
+    <h2>Posicion estatica</h2>
+        <div class="static">
+            Este elemento div tiene posicion estatica
+        </div>
+    <h2>Posicion relativa</h2>
+    <div class="relative">
+        Este elemento div tiene posicion relativa
+    </div>  
+    <h2>Posicion fija</h2>
+    <div class="fixed">
+        Este elemento div tiene posicion fija
+    </div>    
+    <h2>Posicion absoluta</h2>
+    <div class="relative2">
+        Este elemento div tiene posicion relativa
+        <div class="absolute">
+            Este elemento div tiene posicion absoluta
+        </div>
+    </div>      
+    <h2>Posicion sticky</h2>
+    <div class="sticky">
+        Este elemento div tiene posicion sticky
+    </div>   
+    <div>
+        <p>Microsoft y nuestros proveedores de terceros usan cookies para almacenar y acceder a información como identificadores únicos para entregar, mantener y mejorar nuestros servicios y anuncios. Si está de acuerdo, MSN y Microsoft Bing personalizarán el contenido y los anuncios que vea. Puede seleccionar "Acepto" para dar su consentimiento a estos usos o hacer clic en "Administrar preferencias" para revisar las opciones y ejercer su derecho a oponerse al interés legítimo cuando se use. Puede cambiar la selección en "Administrar preferencias" en la parte inferior de esta página.Declaración de privacidad. Utilizar datos de geolocalización precisos y escanear activamente las características del dispositivo para su identificación. Esto se hace para almacenar y acceder a la información en un dispositivo y para proporcionar anuncios y contenido personalizados, medir los anuncios y contenido, obtener información del público y desarrollar productos. Microsoft y nuestros proveedores de terceros usan cookies para almacenar y acceder a información como identificadores únicos para entregar, mantener y mejorar nuestros servicios y anuncios. Si está de acuerdo, MSN y Microsoft Bing personalizarán el contenido y los anuncios que vea. Puede seleccionar "Acepto" para dar su consentimiento a estos usos o hacer clic en "Administrar preferencias" para revisar las opciones y ejercer su derecho a oponerse al interés legítimo cuando se use. Puede cambiar la selección en "Administrar preferencias" en la parte inferior de esta página.Declaración de privacidad. Utilizar datos de geolocalización precisos y escanear activamente las características del dispositivo para su identificación. Esto se hace para almacenar y acceder a la información en un dispositivo y para proporcionar anuncios y contenido personalizados, medir los anuncios y contenido, obtener información del público y desarrollar productos. Microsoft y nuestros proveedores de terceros usan cookies para almacenar y acceder a información como identificadores únicos para entregar, mantener y mejorar nuestros servicios y anuncios. Si está de acuerdo, MSN y Microsoft Bing personalizarán el contenido y los anuncios que vea. Puede seleccionar "Acepto" para dar su consentimiento a estos usos o hacer clic en "Administrar preferencias" para revisar las opciones y ejercer su derecho a oponerse al interés legítimo cuando se use. Puede cambiar la selección en "Administrar preferencias" en la parte inferior de esta página.Declaración de privacidad. Utilizar datos de geolocalización precisos y escanear activamente las características del dispositivo para su identificación. Esto se hace para almacenar y acceder a la información en un dispositivo y para proporcionar anuncios y contenido personalizados, medir los anuncios y contenido, obtener información del público y desarrollar productos.</p>
+
+    </div>        
+</body>
+</html>

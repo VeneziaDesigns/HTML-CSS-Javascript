@@ -1,0 +1,19 @@
+/*Hoja de estilos para listas*/
+/*Clases de las listas*/
+li{
+    background-color: brown;
+}
+.a{
+    list-style-type: none;
+}
+.b{
+    list-style-type: square;
+    background-color: aquamarine;
+    padding: 20px;
+}
+.c{
+    list-style-type: upper-roman;
+}
+.d{
+    list-style-type: lower-alpha;
+}

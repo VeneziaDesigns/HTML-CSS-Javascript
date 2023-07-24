@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="w3-container w3-blue">
+        <h1>CRUD en Javascript</h1>
+    </div>       <!--Previene el comportamiento del formulario por defecto--> 
+    <form class="w3-container" onsubmit="event.preventDefault()">
+        <input type="text" class="w3-input" id="fname" name="fname" placeholder="Nombre..."/>
+        <input type="text" class="w3-input" id="lname" name="lname" placeholder="Apellido..."/>
+        <br><br>
+        <button class="w3-button w3-round w3-yellow" onclick="clearForm()">Limpiar formulario</button>
+        <br><br>
+        <button class="w3-button w3-round w3-blue" onclick="create()">Crear</button>
+        <br><br>
+        <button class="w3-button w3-round w3-blue" onclick="update()">Actualizar</button>
+        <br><br>
+        <button class="w3-button w3-round w3-blue" onclick="deleteItem()">Borrar</button>
+        <br><br>
+        <select id="panel" size="20" onclick="panelClick()"></select>
+    </form>
+    <script src="./crud.js"></script>
+</body>
+</html>

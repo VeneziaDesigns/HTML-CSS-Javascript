@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Tipos de datos
+        //Numeros
+        /*
+        let edad = 25;
+        let altura = 1.89;
+        //String (Cadenas de texto)
+        let nombre = "Adrian";
+        //Valores logicos (Boolean)
+        let casillaVerificacionMarcada = false;
+        let esMasGrande = 4 > 1;
+        alert(esMasGrande);
+        //Valores nulos
+        let hora = null;
+        //Valor sin definir
+        let apellido;
+
+        //Interactuar
+        alert("Hola");
+        //Permite recoger datos desde el usuario
+        let nombre1 = prompt("Introduce tu nombre:");
+        alert(nombre1);
+        */
+        let nombrep = prompt('Escribe tu nombre:');
+        let apellido = prompt('Escribe tu apellido:');
+        document.write(nombrep,' ',apellido);
+        document.write('<br>');
+        let num1 = parseInt(prompt('Escribe un numero:'));
+        let num2 = parseInt(prompt('Escribe otro numero:'));
+        document.write(num1+num2);
+        //prompt recoge todo como strigns
+        //Hay que hacer un parseInt
+
+        //Cuadro de confirmacion
+        let valor = confirm('Has puesto el valor');
+    </script>
+</body>
+</html>

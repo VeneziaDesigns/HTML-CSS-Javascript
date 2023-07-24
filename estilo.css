@@ -1,0 +1,30 @@
+* {
+    border-radius: 20%;
+}
+body{
+    background-color: beige;
+}
+.parrafo1{
+    font-size: 20px;
+    font-family: Arial;
+}   
+.parrafo2{
+    font-size: 14px;
+    font-family: 'Nabla', cursive;
+}
+#menu {
+    color:rgb(207, 24, 24);
+}    
+
+h1{
+    border: 1px solid blue;
+    margin: 10px 50px 100px 150px;
+    background-color: aquamarine;
+}
+p{
+    border: 1px solid rgb(123, 0, 255);
+    padding: 50px 100px;
+}
+ul{
+    list-style:armenian;
+}

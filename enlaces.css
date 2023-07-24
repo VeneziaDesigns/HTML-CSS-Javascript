@@ -1,0 +1,22 @@
+a:link, a:visited {
+    color: white;
+    background-color: #4a4b88;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+}
+a:hover, a:active{
+    background-color: red;
+}
+/*a:visited{
+    color:brown;
+    text-decoration: line-through;
+}
+a:hover{
+    color:blue;
+    text-decoration: overline;
+}
+a:active{
+    color: rgb(255, 0, 0);
+    text-decoration: double;
+}*/

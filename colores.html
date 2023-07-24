@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table width="80%">
+        <script>
+            var r = new Array("00", "33", "66", "99", "cc", "ff");
+            var g = new Array("00", "33", "66", "99", "cc", "ff");
+            var b = new Array("00", "33", "66", "99", "cc", "ff");
+
+            //Contamos desde 00 hasta ff con la var r
+            //Contamos desde 00 hasta ff con la var g
+            //Contamos desde 00 hasta ff con la var b
+            //      Imprimimos el valor rgb
+
+            let i, j, k;
+            for (i = 0; i < r.length; i++) {
+                for (j = 0; j < g.length; j++) {
+                    document.write("<tr>");
+                    for (k = 0; k < b.length; k++) {
+                        var nuevoColor = "#" + r[i] + g[j] + b[k];
+                        //document.write(nuevoColor + "<br>");
+                        document.write("<td bgcolor= " + nuevoColor + " align=center>");
+                        document.write(nuevoColor);
+                        document.write("</td>");
+                    }
+                    document.write("</tr>");
+                }
+            }
+        </script>
+    </table>
+</body>
+</html>
